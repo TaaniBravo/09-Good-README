@@ -15,7 +15,7 @@ const questions = [
         name: 'description'
     },
     {
-        type: 'list',
+        type: 'input',
         message: 'What are the steps to install your project? Provide a step-by-step description of how to get the development environment running.',
         name: 'installation'
     },
@@ -25,14 +25,15 @@ const questions = [
         name: 'usage'
     },
     {
-        type: 'list',
+        type: 'input',
         message: 'List your collaborators, APIs used, and any tutorials followed.',
         name: 'credits'
     },
     {
-        type: 'confirm',
-        message: 'Do you want your license to be restrictive?',
-        name: 'license'
+        type: 'list',
+        message: 'Please choose your preferred license.',
+        name: 'license',
+        choices: ['Restrictive', 'Permissive']
     },
     {
         type: 'input',
@@ -58,11 +59,15 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+ console.log(data)
 }
 
 // function to initialize program
 function init() {
-
+inquirer
+.prompt(questions)
+.then((data) =>
+    writeToFile(data))
 }
 
 // function call to initialize program
