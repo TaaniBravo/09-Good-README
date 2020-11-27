@@ -10,6 +10,23 @@ ${data.description}
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Credits
+${data.credits}
+
+## License
+${license}
+
+## Questions
+If you have any questions or concerns pertaining the project and the code please reach out to:
+Github: ${data.github}
+Email: ${data.email}
 `;
 }
 

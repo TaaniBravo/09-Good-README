@@ -11,7 +11,7 @@ const questions = [
         name: 'description'
     },
     {
-        type: 'input',
+        type: 'list',
         message: 'What are the steps to install your project? Provide a step-by-step description of how to get the development environment running.',
         name: 'installation'
     },
@@ -21,7 +21,7 @@ const questions = [
         name: 'usage'
     },
     {
-        type: 'input',
+        type: 'list',
         message: 'List your collaborators, APIs used, and any tutorials followed.',
         name: 'credits'
     },
