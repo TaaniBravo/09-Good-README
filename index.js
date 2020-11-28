@@ -48,7 +48,7 @@ const questions = [
         type: 'list',
         message: 'Please choose your preferred license.',
         name: 'license',
-        choices: ['GNU GPLv3', 'Mozilla', 'Apache', 'MIT', 'BSL', 'Unlicense']
+        choices: ['GNU GPLv3', 'MIT', 'Unlicense']
     },
     {
         type: 'confirm',
