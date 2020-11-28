@@ -6,6 +6,21 @@ const fs = require('fs')
 const questions = [
     {
         type: 'input',
+        message: 'What is your name?',
+        name: 'name'
+    },
+    {
+        type: 'input',
+        message: 'Please provide your GitHub account username.',
+        name: 'github'
+    },
+    {
+        type: 'input',
+        message: 'Please provide an email.',
+        name: 'email'
+    },
+    {
+        type: 'input',
         message: 'What is the title of your project?',
         name: 'title'
     },
@@ -33,27 +48,12 @@ const questions = [
         type: 'list',
         message: 'Please choose your preferred license.',
         name: 'license',
-        choices: ['Restrictive', 'Permissive']
-    },
-    {
-        type: 'input',
-        message: 'Please provide a name to apply to the License.',
-        name: 'name'
+        choices: ['GNU GPLv3', 'Mozilla', 'Apache', 'MIT', 'BSL', 'Unlicense']
     },
     {
         type: 'confirm',
         message: 'Do you want badges in your README?',
         name: 'badges'
-    },
-    {
-        type: 'input',
-        message: 'Please provide a GitHub account to reach for questions section.',
-        name: 'github'
-    },
-    {
-        type: 'input',
-        message: 'Please provide an email to reach for questions section.',
-        name: 'email'
     },
 ];
 
@@ -66,8 +66,8 @@ function writeToFile(fileName, data) {
 function init() {
 inquirer
 .prompt(questions)
-.then((data) =>
-    writeToFile(data))
+.then((data) => {generateMarkdown(data)
+console.log(generateMarkdown(data))})
 }
 
 // function call to initialize program
