@@ -1,5 +1,25 @@
+
 // function to generate markdown for README
 function generateMarkdown(data) {
+  if (data.license == 'GNU GPLv3'){
+
+  }
+  else if (data.license == 'Mozilla'){
+
+  }
+  else if (data.license == 'Apache'){
+
+  }
+  else if (data.license == 'MIT'){
+
+  }
+  else if (data.license == 'BSL'){
+
+  }
+  else if (data.license == 'Unlicense'){
+
+  }
+
   return `# ${data.title}
 
 
