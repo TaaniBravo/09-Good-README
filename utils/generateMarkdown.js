@@ -3,7 +3,7 @@
 function generateMarkdown(data) {
   switch (data.license) {
     case 'GNU GPLv3':
-      badge = 'https://img.shields.io/badge/<license>-<GNU GPLv3>-<blue>'
+      badge = 'https://img.shields.io/badge/license-GPLv3-blue'
       licenseDesc = `GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
 
@@ -13,10 +13,10 @@ of this license document, but changing it is not allowed.`
       break;
 
     case 'MIT':
-      badge = 'https://img.shields.io/badge/<license>-<MIT>-<yellow>'
+      badge = 'https://img.shields.io/badge/license-MIT-yellow'
       licenseDesc = `MIT License
 
-      Copyright (c) ${Date().getFullYear()} [${data.name}]
+      Copyright (c) ${new Date().getFullYear()}, ${data.name}
       
       Permission is hereby granted, free of charge, to any person obtaining a copy
       of this software and associated documentation files (the "Software"), to deal
@@ -68,17 +68,18 @@ of this license document, but changing it is not allowed.`
   }
 
   return `# ${data.title}
+![License](${badge})
 
-
-## Description
 ${data.description}
-${badge}
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Questions](#questions)
+* [Contributing](#contributing)
+* [Tests](#tests)
 
 ## Installation
 ${data.installation}
@@ -92,10 +93,17 @@ ${data.credits}
 ## License
 ${licenseDesc}
 
+---
 ## Questions
 If you have any questions or concerns pertaining the project and the code please reach out to:
 Github: ${data.github}
 Email: ${data.email}
+
+## Contributing
+${data.contribute}
+
+## Tests
+${data.tests}
 `;
 }
 

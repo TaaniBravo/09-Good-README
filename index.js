@@ -50,17 +50,7 @@ const questions = [
         name: 'license',
         choices: ['GNU GPLv3', 'MIT', 'Unlicense']
     },
-    {
-        type: 'confirm',
-        message: 'Do you want badges in your README?',
-        name: 'badges'
-    },
 ];
-
-// function to write README file
-function writeToFile(fileName, data) {
-
-}
 
 // function to initialize program
 function init() {
