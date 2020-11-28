@@ -59,15 +59,16 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
- console.log(data)
+    
 }
 
 // function to initialize program
 function init() {
-inquirer
-.prompt(questions)
-.then((data) => {generateMarkdown(data)
-console.log(generateMarkdown(data))})
+    inquirer
+        .prompt(questions)
+        .then((data) =>
+            fs.writeFile('./generated-README/README.md', generateMarkdown(data),
+                err => err ? console.error(err) : console.log('Generating your README!')))
 }
 
 // function call to initialize program
