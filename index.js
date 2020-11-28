@@ -67,6 +67,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then((data) => {
+            // WARNING this will overwrite and previously made README.md in the generated-README folder.
             fs.writeFile('./generated-README/README.md', generateMarkdown(data),
                 err => err ? console.error(err) : console.log('Generating your README!'))
         })
