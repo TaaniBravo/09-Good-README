@@ -50,6 +50,16 @@ const questions = [
         name: 'license',
         choices: ['GNU GPLv3', 'MIT', 'Unlicense']
     },
+    {
+        type: 'input',
+        message: 'If you want contribution please detail how people can.',
+        name: 'contribute'
+    },
+    {
+        type: 'input',
+        message: 'Write out tests for your application. Then provide examples on how to run them faster.',
+        name: 'tests'
+    },
 ];
 
 // function to initialize program
