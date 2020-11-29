@@ -95,7 +95,7 @@ ${licenseDesc}
 
 ---
 ## Questions
-If you have any questions or concerns reach me on [Github](github.com/${data.github}) or through email at <${data.email}>
+If you have any questions or concerns reach me on [Github](https://github.com/${data.github}) or through email at <${data.email}>
 
 ## Contributing
 ${data.contribute}

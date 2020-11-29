@@ -94,7 +94,7 @@ MIT License
 
 ---
 ## Questions
-If you have any questions or concerns reach me on [Github](github.com/TaaniBravo) or through email at <taanim@uw.edu>.
+If you have any questions or concerns reach me on [Github](https://github.com/TaaniBravo) or through email at <taanim@uw.edu>.
 
 ## Contributing
 No contributions at this time. Thanks!
