@@ -1,7 +1,7 @@
 # A Good README
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 
-This README was made with the program (with some tweaks to make it pretty)!
+This README was made with the program (added the project criteria and example photo afterwards)!
 
 NOTE: Sample README was stored in the assets folder so that it would not mess with anything else. Please check that when grading.
 
