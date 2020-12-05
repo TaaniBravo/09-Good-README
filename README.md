@@ -66,6 +66,10 @@ Once prompted with the questions provided please answer them how you see fit. Th
 
 ![Example](./assets/example.PNG)
 
+![Video](https://youtu.be/KIbroQt0qes)
+
+[Video Link](https://youtu.be/KIbroQt0qes)
+
 ## Credits
 npmjs.com
 
